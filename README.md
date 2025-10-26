@@ -67,4 +67,4 @@ export WANDB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 python run_sweep.py --project vgg6-cifar10 --count 22
 ```
 Link to the wandb Dashboard for the best sweep runs of 22 configurations:
-[Link Text](https://api.wandb.ai/links/ee24d032-iitm-india/bv8iqbhy)
+(https://api.wandb.ai/links/ee24d032-iitm-india/bv8iqbhy)
