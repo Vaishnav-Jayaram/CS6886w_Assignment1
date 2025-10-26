@@ -28,15 +28,15 @@ pip -q install wandb==0.17.9 matplotlib==3.9.2 rich==13.9.2 -U scikit-learn pyya
 ```
 # 5. Login to Weights & Biases (WandB)
 ```bash
-# In Colab:
-python - <<'EOF'
+# In Colab cell:
+
 import os, wandb
 try:
     wandb.login(timeout=25)
 except Exception:
     print("Unable to login")
     pass
-EOF
+
 
 # Or in terminal:
 wandb login <api_key>
