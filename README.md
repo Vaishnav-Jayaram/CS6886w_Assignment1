@@ -60,10 +60,11 @@ python train.py --activation gelu --optimizer sgd --batch_size 128 --epochs 20 -
 ```bash
 python run_sweep.py --project vgg6-cifar10 --count 22
 ```
-# 11. Online Mode (If you want live W&B dashboard)
+# 11. Online Mode (Iflive W&B dashboard is needed)
 ```bash
 export WANDB_MODE=online
 export WANDB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 python run_sweep.py --project vgg6-cifar10 --count 22
 ```
-
+Link to the wandb Dashboard for the best sweep runs of 22 configurations:
+[Link Text](https://api.wandb.ai/links/ee24d032-iitm-india/bv8iqbhy)
