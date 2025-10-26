@@ -2,6 +2,7 @@
 **Systems Engineering for Deep Learning**
 
 ---
+A notebook file with full end to end implementation which is used for experimental purpose is available - (vgg6_notebook_code)
 
 ### 🚀 Setup Instructions
 
