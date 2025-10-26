@@ -47,3 +47,23 @@ python -c "from data import get_datasets, make_loaders; tr,va,te=get_datasets('.
 # 7. Test the model with the best loaded weights
 ```bash
 python test.py --weights Best.pt --activation gelu --batch_size 128
+```
+# 8. Baseline Training
+```bash
+python train.py --activation relu --optimizer nesterov-sgd --batch_size 512 --epochs 30 --lr 0.05 --momentum 0.9 --weight_decay 0.0005 --seed 42 --project vgg6-cifar10
+```
+# 9. Training using best configuration
+```bash
+python train.py --activation gelu --optimizer sgd --batch_size 128 --epochs 20 --lr 0.05 --momentum 0.9 --weight_decay 0.0 --seed 2 --project vgg6-cifar10
+```
+# 10. Run a sweep experiment
+```bash
+python run_sweep.py --project vgg6-cifar10 --count 22
+```
+# 11. Online Mode (If you want live W&B dashboard)
+```bash
+export WANDB_MODE=online
+export WANDB_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+python run_sweep.py --project vgg6-cifar10 --count 22
+```
+
